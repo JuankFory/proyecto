@@ -1,5 +1,5 @@
 <?php
-
+//include('tabla.php');
 
 ?>
 
@@ -10,7 +10,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Login</title>
-
+  
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -33,7 +33,7 @@
     <div class="card-body login-card-body">
       <p class="login-box-msg">Iniciar session</p>
 
-      <form action="index.html" method="post">
+      <form action="" method="post">
         <div class="input-group mb-3">
           <input type="email" class="form-control" name="usuario" placeholder="Email">
           <div class="input-group-append">

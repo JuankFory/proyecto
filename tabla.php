@@ -1,4 +1,20 @@
 <?php
+include('funciones/funcion.php');
+/*
+
+
+$usu=$_POST['usuario'];
+$clave= $_POST['contraseña'];
+
+if(($usu== "Juan@gmail.com")&& ($clave==1234) ){
+header('Location:index.html');
+
+}
+else{
+  print
+  ('Error de contraseña o usuario');
+}
+*/
 
 ?>
 
@@ -13,13 +29,13 @@
     <title>Document</title>
 </head>
 <body>
-  
-    <center>
+ 
+     <center>
         <h2 id="boleta">Boleteria Esperanza</h2>
     </center>
 <table class="table">
 <thead>
-  <tr>
+<tr>
 <th>Nombre</th>
 <th>Ficho</th>
 <th>500</th>
@@ -38,37 +54,38 @@
 <th>Total</th>
 <th>Saldo</th>
 </tr>
+
 </thead>
 <tbody>
   <?php
- $datos=array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);
+ $datos=array(1,2,3,4,5);
   foreach($datos as $fila){ 
     
   
   ?>
+  
 <tr>
 <td>Andres</td>
 <td>100</td>
-<td><input id="entrada"></input></td>
-<td><input id="entrada"></input></td>
-<td><input id="entrada"></input></td>
-<td><input id="entrada"></input></td>
-<td><input id="entrada"></input></td>
-<td><input id="entrada"></input></td>
-<td><input id="entrada"></input></td>
-<td><input id="entrada"></input></td>
-<td><input id="salida"></input></td>
-<td><input id="salida"></input></td>
-<td><input id="salida"></input></td>
-<td><input id="salida"></input></td>
+<td><input id="entrada" name="inp500" value="<?php echo $dat500 ?>"></input></td>
+<td><input id="entrada" name="inp1000"></input></td>
+<td><input id="entrada" name="inp2000"></input></td>
+<td><input id="entrada" name="inp4"></input></td>
+<td><input id="entrada" name="out500" value="<?php echo $dev500 ?>"></input></td>
+<td><input id="entrada"name="out1000"></input></td>
+<td><input id="entrada"name="out2000"></input></td>
+<td><input id="entrada"name="out4"></input></td>
+<td><input id="salida"name="tot500" value="<?php echo $tot500 ?>"></td>
+<td><input id="salida"name="tot1000"></input></td>
+<td><input id="salida"name="tot2000"></input></td>
+<td><input id="salida"name="tot4"></input></td>
 <td><select name="" id="">
-<option value=""></option>
-  <option value="">Pago</option>
-<option value="">Debe</option>
+<option value="" name=""></option>
+  <option value="1">Pago</option>
+<option value="2">Debe</option>
 </select></td>
-<td><input id="salida"></input></td>
-
-<td><input id="saldo"></input></td>
+<td><input id="salida"name="total"></input></td>
+<td><input id="saldo"name="saldo"></input></td>
 </tr>
 <?php
   }
@@ -78,6 +95,16 @@
 
 </table>
 </div>
+<script>
+  function sumatoria(suma){
+let num1 = Document.getElementByName('inp500');
+let num2 = Document.getElementByName('out500');
+let suma = (num1+num2);
+
+return suma;
+}
+
+</script>
 
 <!--------------------------------->
 <!-- jQuery -->
