@@ -1,5 +1,7 @@
 <?php
-//include('tabla.php');
+include("funciones/funcion.php");
+
+
 
 ?>
 
@@ -10,7 +12,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Login</title>
-  
+      <!--Mensajes de alerta-->
+      
+            <script src="plugins/sweetalert2/sweetalert2.min.js"></script>
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -61,7 +65,7 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+            <button type="submit" class="btn btn-primary btn-block" onclick='ingreso();'>Ingresar</button>
           </div>
           <!-- /.col -->
         </div>

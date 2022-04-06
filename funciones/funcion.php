@@ -1,7 +1,20 @@
 <?php
 
 
+$usu=$_POST['usuario'];
+$clave= $_POST['contraseña'];
 
+if(($usu== "Juan@gmail.com") && ($clave==1234) ){
+header('Location:index.html');
+
+}
+else{
+  
+  swal("Good job!", "Usuario o Contraseña Incorrecta", "success");
+  
+}
+
+/*
 $dat500= 500;
 $dat1000;
 $dat2000;
@@ -23,4 +36,21 @@ $saldo;
 
 $tot500 = ($dat500-$dev500)*400;
 
+function ingreso(){
+
+$usu=$_POST['usuario'];
+$clave= $_POST['contraseña'];
+
+if(($usu== "Juan@gmail.com")&& ($clave==1234) ){
+header('Location:index.html');
+
+}
+else{
+  
+  swal("Good job!", "Usuario ou Contraseña Incorrecta", "success");
+  
+}
+
+}
+*/
 ?>

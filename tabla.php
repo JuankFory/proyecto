@@ -1,20 +1,6 @@
 <?php
 include('funciones/funcion.php');
-/*
 
-
-$usu=$_POST['usuario'];
-$clave= $_POST['contraseña'];
-
-if(($usu== "Juan@gmail.com")&& ($clave==1234) ){
-header('Location:index.html');
-
-}
-else{
-  print
-  ('Error de contraseña o usuario');
-}
-*/
 
 ?>
 
