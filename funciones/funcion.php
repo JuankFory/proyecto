@@ -4,14 +4,14 @@
 $usu=$_POST['usuario'];
 $clave= $_POST['contraseña'];
 
-if(($usu== "Juan@gmail.com") && ($clave==1234) ){
-header('Location:index.html');
+if(($usu=="Juan@gmail.com") && ($clave==1234) ){
+  print('Ingreso Exitoso');
+  header('Location:index.html');
 
 }
 else{
-  
-  swal("Good job!", "Usuario o Contraseña Incorrecta", "success");
-  
+  print('Usuario y contraseña incorrecta');
+   
 }
 
 /*
