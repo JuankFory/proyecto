@@ -1,15 +1,16 @@
   <?php
-  //include("funciones/funcion.php");
-  /*$_POST['usuario']= $usu;
- $_POST['contraseña']= $clave;
+  include("config.php");
+  /*$usu= $_POST['usuario'];
+  $clave= $_POST['contraseña'];
 
   if(($usu=="Juan@gmail.com") && ($clave==1234)){
       header('Location:index.html');
     }else{
      // print('Incorrecto');
     }
-*/
-  ?>
+          */
+
+      ?>
 
 
   <!DOCTYPE html>
@@ -43,7 +44,7 @@
       <div class="card-body login-card-body">
         <p class="login-box-msg">Iniciar session</p>
 
-        <form action="" method="post">
+        <form action="///" method="post">
           <div class="input-group mb-3">
             <input type="email" class="form-control" name="usuario" placeholder="Email">
             <div class="input-group-append">
@@ -71,7 +72,7 @@
             </div>
             <!-- /.col -->
             <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block" onclick='ingreso();'>Ingresar</button>
+            <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
             </div>
             <!-- /.col -->
           </div>
